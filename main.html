@@ -23,20 +23,13 @@ function initMap() {
     zoom: 12,
     center: {lat: 37.8710922, lng: -122.265809}
   });
-
-  var marker = new google.maps.Marker({
-    position: myLatLng,
-    map: map,
-    title: 'Hello World!'
-=======
-  var image = 'images/fig.png';
-  var beachMarker = new google.maps.Marker({
-    position: {lat: 37.885279, lng: -122.273261},
-    map: map,
-    icon: image
-
-  });
-}
+  var fig = 'images/fig.png';
+  var persimmon = 'images/persimmon.png';
+  var marker0= new google.maps.Marker({
+position: {lat: 37.80832, lng: -122.27797},
+map: map,
+icon: persimmon
+});}
     </script>
     <script async defer        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdjCbWL_7rZzwNlwx5EpGpTRwZgFwov7c
 &signed_in=true&callback=initMap"></script>
