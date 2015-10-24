@@ -1,25 +1,39 @@
-<!DOCTYPE html>
+
 <html>
   <head>
-     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
-     <meta charset="utf-8">
-     <title>Simple icons</title>
-     <style>
-       html, body {
-         height: 100%;
-         margin: 0;
-         padding: 0;
-       }
-       \map {
-         height: 100%;
-       }
-     </style>
-   </head>
-   <body>
-     <div id="map"></div>
-     <script>
+    <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
+    <meta charset="utf-8">
+    <title>Simple markers</title>
+    <style>
+      html, body {
+        height: 100%;
+        margin: 0;
+        padding: 0;
+      }
+      #map {
+        height: 100%;
+      }
+    </style>
+  </head>
+  <body>
+      <div id="map"></div>
+          <script>
+ 
+function initMap() {
+  var myLatLngCenter = {lat: 37.8710922, lng: -122.265809};
+  var myLatLng = {lat: 37.885279, lng: -122.273261};
 
+  var map = new google.maps.Map(document.getElementById('map'), {
+    zoom: 14,
+    center: myLatLngCenter
+  });
 
+  var marker = new google.maps.Marker({
+    position: myLatLng,
+    map: map,
+    title: 'Hello World!'
+  });
+}
 
     </script>
     <script async defer
