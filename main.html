@@ -27,11 +27,13 @@ function initMap() {
     zoom: 14,
     center: myLatLngCenter
   });
-
+  var image = '../apple.jpeg';
   var marker = new google.maps.Marker({
     position: myLatLng,
     map: map,
+    icon: image
     title: 'Hello World!'
+    
   });
 }
 
