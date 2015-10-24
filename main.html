@@ -1,9 +1,9 @@
-
+<!DOCTYPE html>
 <html>
   <head>
     <meta name="viewport" content="initial-scale=1.0, user-scalable=no">
     <meta charset="utf-8">
-    <title>Simple markers</title>
+    <title>Simple icons</title>
     <style>
       html, body {
         height: 100%;
@@ -16,30 +16,22 @@
     </style>
   </head>
   <body>
-      <div id="map"></div>
-          <script>
- 
+    <div id="map"></div>
+    <script> 
 function initMap() {
-  var myLatLngCenter = {lat: 37.8710922, lng: -122.265809};
-  var myLatLng = {lat: 37.885279, lng: -122.273261};
-
   var map = new google.maps.Map(document.getElementById('map'), {
-    zoom: 14,
-    center: myLatLngCenter
+    zoom: 12,
+    center: {lat: 37.8710922, lng: -122.265809}
   });
-  var image = '../apple.jpeg';
-  var marker = new google.maps.Marker({
-    position: myLatLng,
+  var image = 'images/fig.png';
+  var beachMarker = new google.maps.Marker({
+    position: {lat: 37.885279, lng: -122.273261},
     map: map,
     icon: image
-    title: 'Hello World!'
-    
   });
 }
-
     </script>
-    <script async defer
-        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdjCbWL_7rZzwNlwx5EpGpTRwZgFwov7c
+    <script async defer        src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCdjCbWL_7rZzwNlwx5EpGpTRwZgFwov7c
 &signed_in=true&callback=initMap"></script>
 
   </body>
