@@ -4,3 +4,5 @@ The website for this project is at [http://jljones.github.io/Food_Sharing/](http
 
 ![NeighborFood](NeighborFood.png "NeighborFood Logo")
 
+![Web App Map](web_app_map.png "NeighborFood web app map image")
+
